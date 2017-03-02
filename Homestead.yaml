@@ -11,5 +11,5 @@ sites:
     - { map: homestead.app, to: /home/vagrant/Code/laundry-ui/public }
 databases:
     - homestead
-name: laundry-ui
-hostname: homestead.app
+name: laundry-ui2
+hostname: homestead
