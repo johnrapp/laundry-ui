@@ -14,3 +14,24 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/test', function () {
+
+	$sample = App\LaundrySample::with('days', 'days.bookings')->first();
+	//$days = App\LaundryDay::all();
+	//$days = $sample->days()->with('bookings')->get();
+	//$days = $sample->days()->get()->map(function($item, $key) {
+		//$item->bookings = $item->bookings()->get();
+	//	return $item;
+	//});
+
+	$bookings = App\LaundryBooking::all();
+
+	//return $sample->toJson();
+	return response()->json([
+		'sample' => $sample,
+	//	'days' => $days,
+	//	'bookings' => $days->first()->bookings()->get()
+	]);
+});
+
