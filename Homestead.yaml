@@ -6,10 +6,10 @@ authorize: ~/.ssh/id_rsa.pub
 keys:
     - ~/.ssh/id_rsa
 folders:
-    - { map: /home/john/Code/laravel-test, to: /home/vagrant/Code/laravel-test }
+    - { map: /home/john/Code/laundry-ui, to: /home/vagrant/Code/laundry-ui }
 sites:
-    - { map: homestead.app, to: /home/vagrant/Code/laravel-test/public }
+    - { map: homestead.app, to: /home/vagrant/Code/laundry-ui/public }
 databases:
     - homestead
-name: laravel-test
-hostname: laravel-test
+name: laundry-ui
+hostname: laundry-ui
