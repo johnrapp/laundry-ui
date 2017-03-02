@@ -12,4 +12,4 @@ sites:
 databases:
     - homestead
 name: laundry-ui
-hostname: laundry-ui
+hostname: homestead.app
